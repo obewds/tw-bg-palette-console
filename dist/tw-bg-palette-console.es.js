@@ -1,19 +1,14 @@
-import { defineComponent, openBlock, createElementBlock, Fragment, createTextVNode, toDisplayString, renderSlot } from "vue";
-const _hoisted_1 = /* @__PURE__ */ createTextVNode("TwBgPaletteConsole");
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  props: {
-    text: { default: "" }
-  },
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", null, [
-        __props.text ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-          createTextVNode(toDisplayString(__props.text), 1)
-        ], 64)) : renderSlot(_ctx.$slots, "default", { key: 1 }, () => [
-          _hoisted_1
-        ])
-      ]);
-    };
+var twBgPaletteConsole = {
+  "console": {
+    colors: {
+      "default": "text-gray-200 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "error": "text-rose-200 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "primary": "text-blue-200 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "secondary": "text-violet-200 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "success": "text-green-300 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "info": "text-cyan-300 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
+      "caution": "text-amber-300 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80"
+    }
   }
-});
-export { _sfc_main as TwBgPaletteConsole };
+};
+export { twBgPaletteConsole as TwBgPaletteConsole };

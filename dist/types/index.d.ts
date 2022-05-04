@@ -1,1 +1,1 @@
-export { default as TwBgPaletteConsole } from './components/TwBgPaletteConsole.vue';
+export { default as TwBgPaletteConsole } from './data/tw-bg-palette-console';

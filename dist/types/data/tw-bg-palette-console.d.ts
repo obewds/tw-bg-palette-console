@@ -5,5 +5,5 @@ interface ConsoleTwBgPaletteInterface {
         };
     };
 }
-export declare let twBgPaletteConsole: ConsoleTwBgPaletteInterface;
-export {};
+declare const _default: ConsoleTwBgPaletteInterface;
+export default _default;

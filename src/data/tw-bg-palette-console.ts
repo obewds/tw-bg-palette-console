@@ -6,7 +6,7 @@ interface ConsoleTwBgPaletteInterface {
     };
 }
 
-export let twBgPaletteConsole: ConsoleTwBgPaletteInterface = {
+export default <ConsoleTwBgPaletteInterface>{
     'console': {
         colors: {
             "default": "text-gray-200 bg-gray-800 bg-opacity-100 dark:bg-black dark:bg-opacity-80",
