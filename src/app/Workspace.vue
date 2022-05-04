@@ -6,7 +6,7 @@
 <script setup lang="ts">
 
     //import TwBgPaletteConsole from '@/components/TwBgPaletteConsole.vue'
-    import { TwBgPaletteConsole } from '../index'
+    import { twBgPaletteConsole } from '../index'
 
     const tw = {
         flex: 'flex justify-center flex-wrap pt-2 pb-6',
@@ -28,13 +28,13 @@
 
 
         <strong :class="tw.heading">
-            TwBgPaletteConsole .colors values
+            twBgPaletteConsole.console.colors values
         </strong>
 
         <div :class="tw.flex">
-            <span :class="tw.span" v-for="color in TwBgPaletteConsole.colors">
-                <div :class="tw.mark">
-                    "{{ color }}"
+            <span :class="tw.span" v-for="(color, index) in twBgPaletteConsole.console.colors">
+                <div :class="tw.mark" :key="index">
+                    "{{ index }}" : "{{ color }}"
                 </div>
             </span>
         </div>

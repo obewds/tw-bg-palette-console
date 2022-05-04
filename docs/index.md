@@ -10,7 +10,7 @@ head:
 
 # @obewds/tw-bg-palette-console
 
-Welcome to the docs page for OBE:WDS's `TwBgPaletteConsole` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `twBgPaletteConsole` component for [Vue.js](https://vuejs.org/)!
 
 <br>
 
@@ -54,15 +54,15 @@ The object returned when importing Tailwind CSS background console color palette
 
 ## Use Example
 
-```html{3,12}
+```html{3,8,16}
 <script setup lang="ts">
 
-    import { TwBgPaletteConsole } from '@obewds/tw-bg-palette-console'
+    import { twBgPaletteConsole } from '@obewds/tw-bg-palette-console'
 
     const props = defineProps({
         bgClasses: {
             type: String,
-            default: TwBgPaletteConsole.colors.primary,
+            default: twBgPaletteConsole.colors.primary,
         },
     })
 

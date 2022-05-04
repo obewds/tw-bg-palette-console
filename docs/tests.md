@@ -23,4 +23,4 @@ head:
 
 ## Vitest Tests
 
-<<< @/../tests/TwBgPaletteConsole.test.js
+<<< @/../tests/twBgPaletteConsole.test.js
