@@ -6,14 +6,13 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
 
 
 # @obewds/tw-bg-palette-console
 
-Welcome to the docs page for OBE:WDS's `TwBgPaletteConsole.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `twBgPaletteConsole` component for [Vue.js](https://vuejs.org/)!
+
+<br>
 
 
 
@@ -24,107 +23,59 @@ Welcome to the docs page for OBE:WDS's `TwBgPaletteConsole.vue` component for [V
 npm install @obewds/tw-bg-palette-console --save-dev
 ```
 
-
-
-
-## Import Component
+<br>
 
 
 
 
-### Template syntax
+## Object Schema
 
-```html{2}
-<template>
-    <TwBgPaletteConsole/>
-</template>
+The object returned when importing Tailwind CSS background console color palette has the following schema:
+
+```javascript
+{
+    'console': {
+        colors: {
+            'default': '',
+            'error': '...',
+            'primary': '...',
+            'secondary': '...',
+            'success': '...',
+        },
+    },
+}
 ```
 
+<br>
 
 
 
-### Script setup syntax
 
-```html{2}
+
+## Use Example
+
+```html{3,8,16}
 <script setup lang="ts">
-    import { TwBgPaletteConsole } from '@obewds/tw-bg-palette-console'
-</script>
-```
 
+    import { twBgPaletteConsole } from '@obewds/tw-bg-palette-console'
 
-
-
-### Composition API syntax
-
-```html{3,6}
-<script lang="ts">
-    import { defineComponent } from 'vue'
-    import { TwBgPaletteConsole } from '@obewds/tw-bg-palette-console'
-
-    export default defineComponent({
-        components: { TwBgPaletteConsole }
+    const props = defineProps({
+        bgClasses: {
+            type: String,
+            default: twBgPaletteConsole.colors.primary,
+        },
     })
+
 </script>
-```
 
-
-
-
-## Props
-
-
-
-
-### text
-
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
-
-
-```html{2}
 <template>
-    <TwBgPaletteConsole text="My text prop string"/>
+
+    <div :class="bgClasses">
+        {{ bgClasses }}
+    </div>
+
 </template>
 ```
-
-Outputs:
-
-```html
-<div>My text prop string</div>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-
-
-
-## Slots
-
-
-
-
-### default
-
-```html{2-4}
-<template>
-    <TwBgPaletteConsole>
-        My slot content
-    </TwBgPaletteConsole>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My slot content</div>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
 
 
 

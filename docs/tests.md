@@ -6,11 +6,6 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
-
-
 
 
 # @obewds/tw-bg-palette-console Tests
@@ -28,4 +23,4 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 ## Vitest Tests
 
-<<< @/../tests/TwBgPaletteConsole.test.js
+<<< @/../tests/twBgPaletteConsole.test.js

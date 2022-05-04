@@ -3,7 +3,7 @@
 module.exports = {
     base: '/tw-bg-palette-console/',
     title: '@obewds/tw-bg-palette-console',
-    description: 'A documentation site for the TwBgPaletteConsole component',
+    description: 'A documentation site for the twBgPaletteConsole component',
     markdown: {
       lineNumbers: true,
     },

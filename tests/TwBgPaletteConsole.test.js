@@ -1,44 +1,39 @@
-// ./tests/TwBgPaletteConsole.test.js
+// ./tests/twBgPaletteConsole.test.js
 
-import { mount } from '@vue/test-utils'
-import TwBgPaletteConsole from '../src/components/TwBgPaletteConsole.vue'
-
+import { twBgPaletteConsole } from '../src/index'
 
 
-test('TwBgPaletteConsole.vue component mounts successfully', async () => {
 
-    expect(TwBgPaletteConsole).toBeTruthy()
+test('twBgPaletteConsole component returns a truthy value', async () => {
+
+    expect(twBgPaletteConsole).toBeTruthy()
 
 })
 
 
 
-test('TwBgPaletteConsole.vue component text prop accepts a string value', async () => {
+test('twBgPaletteConsole.console component returns an object with a truthy console property', async () => {
 
-    const testString = 'Test String Value'
+    expect(twBgPaletteConsole.console).toBeTruthy()
 
-    const wrapper = mount(TwBgPaletteConsole, {
-        props: {
-            text: testString
-        },
-    })
-
-    expect(wrapper.text()).toContain(testString)
-    
 })
 
 
 
-test('TwBgPaletteConsole.vue component default slot accepts an element node with a child text node', async () => {
+test('twBgPaletteConsole.console.colors component returns an object with a truthy colors property', async () => {
 
-    const testStrLiteral = `<div>Test String Value</div>`
+    expect(twBgPaletteConsole.console.colors).toBeTruthy()
 
-    const wrapper = mount(TwBgPaletteConsole, {
-        slots: {
-            default: testStrLiteral
-        },
-    })
+})
 
-    expect(wrapper.html()).toContain(testStrLiteral)
-    
+
+
+test('twBgPaletteConsole component returns an object with the standard five default color names', async () => {
+
+    expect(twBgPaletteConsole.console.colors['default']).toBeTruthy()
+    expect(twBgPaletteConsole.console.colors['error']).toBeTruthy()
+    expect(twBgPaletteConsole.console.colors['primary']).toBeTruthy()
+    expect(twBgPaletteConsole.console.colors['secondary']).toBeTruthy()
+    expect(twBgPaletteConsole.console.colors['success']).toBeTruthy()
+
 })

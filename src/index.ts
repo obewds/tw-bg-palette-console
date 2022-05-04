@@ -1,1 +1,1 @@
-export { default as TwBgPaletteConsole } from './data/tw-bg-palette-console'
+export { default as twBgPaletteConsole } from './data/tw-bg-palette-console'
