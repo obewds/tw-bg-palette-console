@@ -20,7 +20,7 @@ Check out the [official docs](https://obewds.github.io/tw-bg-palette-console/) f
 ## Installation
 
 ```bash
-npm install @obewds/vue-tw-el --save-dev
+npm install @obewds/tw-bg-palette-console --save-dev
 ```
 
 <br>
@@ -30,5 +30,5 @@ npm install @obewds/vue-tw-el --save-dev
 ## Uninstall
 
 ```bash
-npm uninstall @obewds/vue-tw-el
+npm uninstall @obewds/tw-bg-palette-console
 ```
