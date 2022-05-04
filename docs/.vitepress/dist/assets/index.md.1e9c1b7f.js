@@ -17,7 +17,7 @@ import{_ as n,c as s,o as a,a as e}from"./app.2ee72b50.js";const m='{"title":"@o
     <span class="token keyword">const</span> props <span class="token operator">=</span> <span class="token function">defineProps</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
         <span class="token literal-property property">bgClasses</span><span class="token operator">:</span> <span class="token punctuation">{</span>
             <span class="token literal-property property">type</span><span class="token operator">:</span> String<span class="token punctuation">,</span>
-            <span class="token keyword">default</span><span class="token operator">:</span> twBgPaletteConsole<span class="token punctuation">.</span>colors<span class="token punctuation">.</span>primary<span class="token punctuation">,</span>
+            <span class="token keyword">default</span><span class="token operator">:</span> twBgPaletteConsole<span class="token punctuation">.</span>console<span class="token punctuation">.</span>colors<span class="token punctuation">.</span>primary<span class="token punctuation">,</span>
         <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
 
