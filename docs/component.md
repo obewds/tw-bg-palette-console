@@ -18,15 +18,6 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 
 
-## Vue Component Code
-
-Pure Vue.js version
-
-<<< @/../src/components/TwBgPaletteConsole.vue
-
-
-
-
 ## ES Module Version
 
 ESM version
