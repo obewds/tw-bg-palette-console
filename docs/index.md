@@ -62,7 +62,7 @@ The object returned when importing Tailwind CSS background console color palette
     const props = defineProps({
         bgClasses: {
             type: String,
-            default: twBgPaletteConsole.colors.primary,
+            default: twBgPaletteConsole.console.colors.primary,
         },
     })
 
