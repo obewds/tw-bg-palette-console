@@ -13,6 +13,8 @@ The @obewds/tw-bg-palette-console modular design system component for Vue.js
 
 Check out the [official docs](https://obewds.github.io/tw-bg-palette-console/) for this component for more details!
 
+Or check out the [CHANGELOG](https://obewds.github.io/tw-bg-palette-console/) for the code base!
+
 <br>
 
 
