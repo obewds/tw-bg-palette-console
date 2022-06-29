@@ -1,7 +1,7 @@
 {
   "name": "@obewds/tw-bg-palette-console",
   "description": "The @obewds/tw-bg-palette-console modular design system component for Vue.js",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/tw-bg-palette-console/",
   "license": "MIT",
