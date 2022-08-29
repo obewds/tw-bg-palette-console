@@ -25,6 +25,8 @@ jobs:
           cache: 'npm'
       - run: npm install
       # - run: npm test
+      - run: npm pkg:org
+      - run: npm git:tag
       - uses: JS-DevTools/npm-publish@v1
         with:
           access: "public"
